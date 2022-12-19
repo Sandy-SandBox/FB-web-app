@@ -50,6 +50,10 @@
       border: 3px solid var(--clr-primary-300);
       border-radius: 50%;
       @include a.absCenter;
+      @include a.breakpoint-down(small) {
+        width: 150%;
+        height: 150%;
+      }
     }
     @include a.flexCenter(column);
     i {
