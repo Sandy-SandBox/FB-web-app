@@ -1,0 +1,35 @@
+/**********************************************/
+/* NAV TOGGLE */
+/**********************************************/
+@use "../abstracts" as a;
+
+.nav-toggle {
+  display: none;
+  @include a.breakpoint-down(medium) {
+    display: flex;
+    flex-direction: column;
+    gap: a.rem(8);
+    cursor: pointer;
+    //   background-color: red;
+    //   padding: 5555px;
+  }
+  &__line {
+    display: inline-block;
+    width: a.rem(36);
+    height: 3px;
+    background-color: var(--clr-tertiary-300);
+    transition: all var(--transition-fast);
+    &--1 {
+      transition-delay: 0;
+    }
+    &--2 {
+      transition-delay: var(--transition-fast);
+    }
+  }
+  &.active &__line--1 {
+    transform: translateY(a.rem(6.1));
+  }
+  &.active &__line--2 {
+    transform: translateY(a.rem(-6.9));
+  }
+}

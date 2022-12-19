@@ -1,0 +1,26 @@
+/**********************************************/
+/* BUTTONS */
+/**********************************************/
+@use '../abstracts' as a;
+.btn {
+    display: inline-block;
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+    padding: a.rem(12) a.rem(24);
+    &--primary {
+background-color: var(--clr-primary-400);
+// background-image: var(--gradient-primary-blue);
+color: var(--clr-white-400);
+border-radius: 100vmax;
+box-shadow: var(--bx-shadow-big);
+transition: all var(--transition-default);
+&:hover {
+    background-color: var(--clr-primary-300);
+}
+&:active {
+    background-color: var(--clr-primary-300);
+    transform: scale(0.85);
+    box-shadow: var(--bx-shadow-medium);
+}
+    }
+}

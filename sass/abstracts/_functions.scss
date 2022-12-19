@@ -1,0 +1,14 @@
+/**********************************************/
+  /* FUNCTIONS */
+/**********************************************/
+@use "sass:math";
+
+/***** Convert pixals to rem *****/
+@function rem($pixel) {
+    @return math.div($pixel, 16) + rem;
+}
+
+/***** Convert pixals to em *****/
+@function em($pixel) {
+    @return math.div($pixel, 16) + em;
+}

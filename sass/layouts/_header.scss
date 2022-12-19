@@ -1,0 +1,40 @@
+/**********************************************/
+/* HEADER */
+/**********************************************/
+@use '../abstracts' as a;
+
+.header {
+    width: 100vw;
+    height: a.rem(100);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--clr-white-400);
+    border-bottom: 1px solid var(--clr-white-600);
+    &.active {
+        background-image: linear-gradient(#DCF8EF,#FEE2F8);
+    }
+    &__logo {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-700);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--clr-tertiary-400);
+        text-align: center;
+        line-height: 1.3;
+        @include a.breakpoint-down(small) {
+            font-size: var(--fs-600);
+        }
+        & > * {
+            display: block;
+        }
+        &-subtitle {
+           font-size: var(--fs-200);
+           font-weight: 500;
+           color: var(--clr-tertiary-200);
+           letter-spacing: 3px;
+        }
+    }
+}

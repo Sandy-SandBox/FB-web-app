@@ -1,0 +1,69 @@
+/**********************************************/
+/* CUSTOM PROPERTIES */
+/**********************************************/
+@use "../abstracts" as a;
+
+:root {
+  /****** Fonts ******/
+  --ff-heading: "Montserrat", sans-serif;
+  --ff-body: "Manrope", sans-serif;
+
+  --fs-900: 3.815rem;
+  --fs-800: 3.052rem;
+  --fs-700: 2.441rem;
+  --fs-600: 1.953rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+  --fs-300: 0.8rem;
+  --fs-200: 0.64rem;
+  --fs-100: 0.512rem;
+
+  /****** Colors ******/
+  --clr-primary-300: hsl(212, 100%, 60%);
+  --clr-primary-400: hsl(212, 100%, 50%);
+  --clr-primary-600: hsl(212, 100%, 40%);
+
+  --clr-secondary-300: hsl(353, 100%, 70%);
+  --clr-secondary-400: hsl(353, 100%, 63%);
+  --clr-secondary-400: hsl(353, 100%, 56%);
+
+  --clr-tertiary-100: hsl(210, 10%, 50%);
+  --clr-tertiary-200: hsl(210, 10%, 40%);
+  --clr-tertiary-300: hsl(210, 10%, 30%);
+  --clr-tertiary-400: hsl(210, 10%, 23%);
+  --clr-tertiary-500: hsl(210, 11%, 15%);
+
+  --clr-white-400: hsl(0, 0%, 98%);
+  --clr-white-500: hsl(0, 0%, 95%);
+  --clr-white-600: hsl(0, 0%, 90%);
+
+  --gradient-primary-red: linear-gradient(
+    90deg,
+    var(--clr-secondary-400),
+    var(--clr-primary-400)
+  );
+  --gradient-primary-blue: linear-gradient(90deg, #1e80ff 0%, #3a47d5 100%);
+
+  --transition-fast: 300ms;
+  --transition-medium: 400ms;
+  --transition-default: 600ms;
+  --transition-slow: 900ms;
+
+  --bx-shadow-big: 0 30px 60px rgba(0, 0, 0, 0.2);
+  --bx-shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@include a.breakpoint-down(large) {
+  :root {
+    --fs-900: 2.986rem;
+    --fs-800: 2.488rem;
+    --fs-700: 2.074rem;
+    --fs-600: 1.728rem;
+    --fs-500: 1.25rem;
+    --fs-450: 1.2rem;
+    --fs-400: 1rem;
+    --fs-300: 0.833rem;
+    --fs-200: 0.64rem;
+    --fs-100: 0.694rem;
+  }
+}

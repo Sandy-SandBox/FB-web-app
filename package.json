@@ -1,0 +1,14 @@
+{
+  "name": "fb-web-app",
+  "version": "1.0.0",
+  "description": "A web app to create a pdf of your messenger call logs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:./assets/css/style.css --style compressed"
+  },
+  "author": "Sushant kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

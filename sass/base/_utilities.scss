@@ -1,0 +1,245 @@
+/**********************************************/
+/* UTILITES CLASSES */
+/**********************************************/
+@use "../abstracts" as a;
+
+.container {
+  width: min(90rem, 95%);
+  margin: 0 auto;
+}
+.container-sm {
+  width: min(70rem, 95%);
+  margin-inline: auto;
+}
+.section-title {
+  margin-bottom: a.rem(60);
+}
+
+/***** Text *****/
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align-last: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/***** Display *****/
+.display-block {
+  display: block;
+}
+.display-inline {
+  display: inline;
+}
+.display-inline-block {
+  display: inline-block;
+}
+
+/***** Flex *****/
+.flex {
+  display: flex;
+}
+.flex-inline {
+  display: inline-flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-items-start {
+  align-items: flex-start;
+}
+.flex-items-end {
+  align-items: flex-end;
+}
+.flex-items-center {
+  align-items: center;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-1 {
+  flex: 1;
+}
+
+/***** Grid *****/
+.grid {
+  display: grid;
+}
+.grid-center {
+  place-items: center;
+}
+.grid-items-start {
+  align-items: start;
+}
+.grid-items-end {
+  align-items: end;
+}
+.grid-items-center {
+  align-items: center;
+}
+.grid-justify-start {
+  justify-content: start;
+}
+.grid-justify-end {
+  justify-content: end;
+}
+.grid-justify-center {
+  justify-content: center;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-6-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/***** Margin *****/
+// Using 4 pt grid system for spacing
+.mg-t-900 {
+  margin-top: a.rem(80);
+}
+.mg-t-800 {
+  margin-top: a.rem(68);
+}
+.mg-t-700 {
+  margin-top: a.rem(56);
+}
+.mg-t-600 {
+  margin-top: a.rem(48);
+}
+.mg-t-500 {
+  margin-top: a.rem(40);
+}
+.mg-t-400 {
+  margin-top: a.rem(28);
+}
+.mg-t-300 {
+  margin-top: a.rem(20);
+}
+.mg-t-200 {
+  margin-top: a.rem(8);
+}
+.mg-t-100 {
+  margin-top: a.rem(4);
+}
+
+.mg-b-900 {
+  margin-bottom: a.rem(80);
+}
+.mg-b-800 {
+  margin-bottom: a.rem(68);
+}
+.mg-b-700 {
+  margin-bottom: a.rem(56);
+}
+.mg-b-600 {
+  margin-bottom: a.rem(48);
+}
+.mg-b-500 {
+  margin-top: a.rem(40);
+}
+.mg-b-400 {
+  margin-bottom: a.rem(28);
+}
+.mg-b-300 {
+  margin-bottom: a.rem(20);
+}
+.mg-b-200 {
+  margin-top: a.rem(8);
+}
+.mg-b-100 {
+  margin-bottom: a.rem(4);
+}
+
+/***** Padding *****/
+.pd-t-900 {
+  padding-top: a.rem(80);
+}
+.pd-t-800 {
+  padding-top: a.rem(68);
+}
+.pd-t-700 {
+  padding-top: a.rem(56);
+}
+.pd-t-600 {
+  padding-top: a.rem(48);
+}
+.pd-t-500 {
+  padding-top: a.rem(40);
+}
+.pd-t-400 {
+  padding-top: a.rem(28);
+}
+.pd-t-300 {
+  padding-top: a.rem(20);
+}
+.pd-t-200 {
+  padding-top: a.rem(8);
+}
+.pd-t-100 {
+  padding-top: a.rem(4);
+}
+
+.pd-b-900 {
+  padding-bottom: a.rem(80);
+}
+.pd-b-800 {
+  padding-bottom: a.rem(68);
+}
+.pd-b-700 {
+  padding-bottom: a.rem(56);
+}
+.pd-b-600 {
+  padding-bottom: a.rem(48);
+}
+.pd-b-500 {
+  padding-bottom: a.rem(40);
+}
+.pd-b-400 {
+  padding-bottom: a.rem(28);
+}
+.pd-b-300 {
+  padding-bottom: a.rem(20);
+}
+.pd-b-200 {
+  padding-bottom: a.rem(8);
+}
+.pd-b-100 {
+  padding-bottom: a.rem(4);
+}

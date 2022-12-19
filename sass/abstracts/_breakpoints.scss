@@ -1,0 +1,27 @@
+/**********************************************/
+/* BREAKPOINTS */
+/**********************************************/
+@use "functions" as f;
+
+$breakpoints-up: (
+  "medium": f.em(768),
+  "large": f.em(992),
+  "huge": f.em(1200),
+);
+$breakpoints-down: (
+  "small": f.em(600),
+  "medium": f.em(768),
+  "large": f.em(992),
+  "huge": f.em(1200),
+);
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down,$size)) {
+    @content;
+  }
+}
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up,$size)) {
+    @content;
+  }
+}

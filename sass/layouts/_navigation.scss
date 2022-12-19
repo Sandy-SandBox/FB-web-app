@@ -1,0 +1,115 @@
+/**********************************************/
+/* NAVIGATION */
+/**********************************************/
+@use "../abstracts" as a;
+
+.layer {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all var(--transition-fast);
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+.nav {
+  @include a.breakpoint-down(medium) {
+    width: 100%;
+    padding: a.rem(32) 0;
+    position: fixed;
+    top: a.rem(100);
+    left: 0;
+    // background-image: linear-gradient(#DCF8EF,#FEE2F8);
+    background-color: var(--clr-white-400);
+    flex-direction: column;
+    gap: a.rem(62);
+    z-index: 999;
+    transition: all var(--transition-fast);
+    transition-delay: var(--transition-fast);
+    transform: scaleY(0);
+    transform-origin: top;
+    pointer-events: none;
+    &::before {
+      
+    }
+  }
+  &.active {
+    transform: scaleY(1);
+    pointer-events: auto;
+  }
+  &__list {
+    gap: a.rem(32);
+    @include a.breakpoint-down(medium) {
+      flex-direction: column;
+      gap: a.rem(52);
+    }
+  }
+  &__link {
+    font-size: var(--fs-500);
+    color: var(--clr-tertiary-400);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transition-fast);
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--clr-primary-400);
+      transform: rotate(-45deg) translateX(-50%);
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition-default);
+    }
+  }
+  &__link:hover,
+  &__link--active {
+    color: var(--clr-primary-400);
+  }
+
+  &__link:hover::after,
+  &__link--active::after {
+    bottom: -15px;
+    opacity: 1;
+    transform: rotate(45deg) translateX(-50%);
+  }
+  &__seprator {
+    display: inline-block;
+    width: 2px;
+    height: a.rem(20);
+    background-color: var(--clr-tertiary-200);
+    margin: 0 a.rem(24);
+    @include a.breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  &__contact {
+    gap: a.rem(20);
+  }
+  &__icon:link,
+  &__icon:visited {
+    font-size: var(--fs-500);
+    color: var(--clr-tertiary-400);
+    transition: all var(--transition-fast);
+  }
+  &__icon:hover,
+  &__icon:active {
+    color: var(--clr-primary-400);
+    transform: translateY(-10px);
+  }
+}
