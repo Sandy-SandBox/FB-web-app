@@ -10,7 +10,6 @@
     background-image: linear-gradient(#DCF8EF,#FEE2F8);
     background-size: cover;
     background-position: center;
-    // background-color: red;
     @include a.breakpoint-down(small) {
       height: 110vh;
     }

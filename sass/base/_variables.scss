@@ -19,6 +19,7 @@
   --fs-100: 0.512rem;
 
   /****** Colors ******/
+  --clr-primary-100: hsl(212, 100%, 93%);
   --clr-primary-300: hsl(212, 100%, 60%);
   --clr-primary-400: hsl(212, 100%, 50%);
   --clr-primary-600: hsl(212, 100%, 40%);
@@ -36,6 +37,7 @@
   --clr-white-400: hsl(0, 0%, 98%);
   --clr-white-500: hsl(0, 0%, 95%);
   --clr-white-600: hsl(0, 0%, 90%);
+  --clr-white-700: hsl(0, 0%, 80%);
 
   --gradient-primary-red: linear-gradient(
     90deg,
@@ -51,6 +53,8 @@
 
   --bx-shadow-big: 0 30px 60px rgba(0, 0, 0, 0.2);
   --bx-shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --bx-shadow-light: 0 0px 0 transparent,
+                     0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 @include a.breakpoint-down(large) {

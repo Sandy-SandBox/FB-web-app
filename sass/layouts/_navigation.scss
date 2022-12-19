@@ -6,7 +6,7 @@
 .layer {
   content: '';
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,9 +40,7 @@
     transform: scaleY(0);
     transform-origin: top;
     pointer-events: none;
-    &::before {
-      
-    }
+    // box-shadow: var(--bx-shadow-light);
   }
   &.active {
     transform: scaleY(1);
