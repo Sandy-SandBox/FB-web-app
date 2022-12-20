@@ -19,7 +19,7 @@
     />
     <!--=============== CUSTOM STYLESHEET ===============-->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Messenger Call History | Get Your Messenger Call History</title>
+    <title>Messenger Call Logs | Get Your Messenger Call History</title>
   </head>
   <body>
     <div class="layer"></div>
@@ -27,22 +27,22 @@
     <header class="header | grid grid-center">
       <div class="container | flex flex-items-center flex-justify-between">
         <a href="#" class="header__logo"
-          ><span>MCH</span>
-          <span class="header__logo-subtitle">Messenger call history</span>
+          ><span>MCL</span>
+          <span class="header__logo-subtitle">Messenger call logs</span>
         </a>
         <nav class="nav | flex flex-items-center">
           <ul class="nav__list | flex flex-items-center" role="list">
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--active"> Home </a>
+              <a href="#home" class="nav__link nav__link--active"> Home </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"> How to </a>
+              <a href="#how-to" class="nav__link"> How to </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"> Faq </a>
+              <a href="#faq" class="nav__link"> Faq </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"> Contact </a>
+              <a href="#contact" class="nav__link"> Contact </a>
             </li>
           </ul>
           <!--====== Nav Separator ======-->
@@ -67,7 +67,7 @@
     <!--=============X= HEADER ENDS =X=============-->
 
     <!--=============== HERO STARTS ===============-->
-    <section class="hero">
+    <section class="hero" id="home">
       <img src="assets/images/hero-bg.jpg" alt="" class="hero__bg" />
       <div class="hero__content | container-sm text-center">
         <h1 class="hero__heading | heading-primary">
@@ -112,9 +112,11 @@
       </div>
     </section>
     <!--=============X= HERO ENDS =X=============-->
-    <section class="how-to-section">
+
+    <!--=============== HOW TO STARTS ===============-->
+    <section class="how-to-section" id="how-to">
       <div class="section-title | container-sm text-center">
-        <h2 class="section-title__heading | heading-secondary mg-b-900">
+        <h2 class="section-title__heading | heading-secondary">
           Only 2 steps to get your data
         </h2>
       </div>
@@ -152,7 +154,7 @@
         <div class="step step--2">
           <h3 class="step__heading | heading-tertiary" data-step-count="2">
             <b class="clr-secondary-300">Step 2:</b> use
-            <span class="clr-primary-300 text-uppercase">mch</span> to view your
+            <span class="clr-primary-300 text-uppercase">mcl</span> to view your
             call logs
           </h3>
           <ul class="step__list flex flex-column mg-t-400" role="list">
@@ -180,7 +182,7 @@
           </ul>
         </div>
       </div>
-      <div class="step__bottom | container-sm text-center mg-t-800">
+      <div class="step__bottom | container-sm text-center mg-t-700">
         <div class="step__bottom-rating flex flex-center">
           <i class="ri-shield-star-fill"></i>
           <i class="ri-shield-star-fill"></i>
@@ -188,10 +190,118 @@
           <i class="ri-shield-star-fill"></i>
           <i class="ri-shield-star-fill"></i>
         </div>
-        <p class="step__bottom-txt pd-t-200">Our website is 100% safe to use.</p>
+        <p class="step__bottom-txt pd-t-200">
+          Our website is 100% safe to use.
+        </p>
       </div>
     </section>
+    <!--=============X= HOW TO ENDS =X=============-->
 
+    <section class="faq-section" id="faq">
+      <div class="section-title | container-sm text-center">
+        <h2 class="section-title__heading | heading-secondary">
+          Frequently asked questions
+        </h2>
+      </div>
+      <div class="faqs container">
+        <ul class="faq grid grid-2-cols" role="list">
+          <li class="faq__item">
+            <label for="faq-answer1" class="faq__question">
+              I have not recived facebook data file
+              <i class="ri-arrow-right-s-line faq__icon"></i>
+            </label>
+            <input type="radio" name="a" id="faq-answer1" class="faq__input" />
+            <div class="faq__answer">
+              <p class="faq__answer-txt">
+                Sometimes it takes hours and days for Facebook to create your
+                Facebook data file. Please wait and eventually it will show to
+                you.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <label for="faq-answer2" class="faq__question">
+              How do i retrierve very old call logs?
+              <i class="ri-arrow-right-s-line faq__icon"></i>
+            </label>
+            <input type="radio" name="a" id="faq-answer2" class="faq__input" />
+            <div class="faq__answer">
+              <p class="faq__answer-txt">
+                When creating your Facebook data file (how to), besides choosing
+                JSON Low quality, please make sure to select All of my data for
+                Date Range selection. Facebook will then create all available
+                data up to now for you.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <label for="faq-answer3" class="faq__question">
+              I lost my call history statment
+              <i class="ri-arrow-right-s-line faq__icon"></i>
+            </label>
+            <input type="radio" name="a" id="faq-answer3" class="faq__input" />
+            <div class="faq__answer">
+              <p class="faq__answer-txt">
+                When a call history statement is unlocked, it is also sent to
+                your email address. Please check your mailbox.
+              </p>
+              <p class="faq__answer-txt mg-t-200">
+                If you still cannot find it, or have lost the email, please
+                contact us with your email address and/or purchase date, and
+                we'll try to recover it for you .
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <label for="faq-answer4" class="faq__question">
+              Is my facebook data safe?
+              <i class="ri-arrow-right-s-line faq__icon"></i>
+            </label>
+            <input type="radio" name="a" id="faq-answer4" class="faq__input" />
+            <div class="faq__answer">
+              <p class="faq__answer-txt">
+                Your Facebook data file is stored and processed on your
+                computer, disconnected to the world, to make sure it is only
+                accessible by you, not even us. Beware of those so-call-services
+                / scammers trying to obtain your Facebook data these days.
+              </p>
+              <p class="faq__answer-txt mg-t-200">
+                When printing out call logs, we require minimal information;
+                including Your FB Nick Name, Caller FB Nick Name, Date and
+                Duration; to generate Call History Statement on screen for you
+                to print. These data will NOT be shared with any third party, by
+                any mean, and are handled securely.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <label for="faq-answer5" class="faq__question">
+              Is this free?
+              <i class="ri-arrow-right-s-line faq__icon"></i>
+            </label>
+            <input type="radio" name="a" id="faq-answer5" class="faq__input" />
+            <div class="faq__answer">
+              <p class="faq__answer-txt">
+                Our website is totally free and safe to use.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <label for="faq-answer6" class="faq__question">
+              I have other question
+              <i class="ri-arrow-right-s-line faq__icon"></i>
+            </label>
+            <input type="radio" name="a" id="faq-answer6" class="faq__input" />
+            <div class="faq__answer">
+              <p class="faq__answer-txt">
+                Please contact us or chat to us using the Messenger icon on the
+                bottom right of the website.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!--=============== CUSTOM JAVASCRIPT ===============-->
     <script src="assets/js/app.js"></script>
   </body>
