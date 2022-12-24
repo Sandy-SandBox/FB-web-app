@@ -1,0 +1,17 @@
+/**********************************************/
+/* FOOTER */
+/**********************************************/
+@use "../abstracts" as a;
+
+.footer {
+    background-color: var(--clr-tertiary-300);
+    padding: a.rem(20) 0;
+    &__txt {
+        font-size: var(--fs-300);
+        color: var(--clr-white-500);
+    }
+    &__link {
+        font-weight: 500;
+        color: var(--clr-primary-300);
+    }
+}

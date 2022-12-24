@@ -4,65 +4,114 @@
 @use "../abstracts" as a;
 
 .faq-section {
-  padding: a.rem(40) 0 a.rem(80) 0;
+    padding: a.rem(80) 0;
 }
-.faq {
-  column-gap: a.rem(40);
-  row-gap: a.rem(20);
-  @include a.breakpoint-down(large) {
-    grid-template-columns: 1fr;
-  }
-  &__question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: a.rem(12) a.rem(16);
-    background-color: var(--clr-white-400);
-    color: var(--clr-tertiary-300);
-    border-radius: a.rem(10);
-    font-size: var(--fs-500);
-    font-weight: 600;
-    box-shadow: 0 0 a.rem(10) rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    @include a.breakpoint-down(small) {
-      padding: a.rem(12) a.rem(4);
+.accordion{
+    &__container{
+        display: grid;
+        row-gap: a.rem(20);
+        padding: 2rem 1rem;
+        background-color: var(--container-color);
+        border-radius: .5rem;
+        box-shadow: 0 12px 32px hsla(0, 0%, 20%, 0.1);
     }
-  }
-  &__item.active {
-    .faq__question {
-      color: var(--clr-primary-300);
+    &__title{
+        font-size: var(--fs-500);
+        color: var(--clr-tertiary-400);
+        font-weight: 400;
+        margin-top: .15rem;
+        transition: .2s;
     }
-    .faq__icon {
-      color: var(--clr-primary-300);
-      transform: rotate(90deg);
+    &__header{
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        padding: 1.25rem 1.25rem 1.25rem 1rem;
+        cursor: pointer;
     }
-  }
-  &__icon {
-    font-size: var(--fs-600);
-    transition: all var(--transition-fast);
-  }
-  &__answer {
-    background-color: var(--clr-white-400);
-    color: var(--clr-tertiary-300);
-    border-radius: a.rem(10);
-    font-size: var(--fs-400);
-    box-shadow: 0 0 a.rem(10) rgba(0, 0, 0, 0.1);
-    margin-top: a.rem(16);
-    transform: scaleY(0);
-    transform-origin: top;
-    height: 0;
-    overflow: hidden;
-    transition: all var(--transition-fast);
-    &-txt {
-      line-height: 1.7;
-      padding: a.rem(16);
+    &__description{
+        padding: 0 1.25rem 1.25rem 3rem;
+        font-size: var(--fs-400);
     }
-  }
-  &__input {
-    display: none;
-  }
-  &__input:checked + &__answer {
-    transform: scaleY(1);
-    height: max-content;
-  }
+    &__icon{
+        font-size: 1.5rem;
+        height: max-content;
+        color: var(--title-color);
+        transition: .3s;
+    }
+
+    &__item{
+        box-shadow: 0 2px 6px hsla(0, 0%, 15%, 0.1);
+        background-color:var(--container-color);
+        border-radius: .25rem;
+        position: relative;
+        transition: all .25s ease;
+
+        &::after{
+            content: '';
+            background-color: var(--first-color);
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: .25rem 0 0 .25rem;
+        }
+
+        // Optional colors
+        &:nth-child(1){
+            background-color: hsl(28, 100, 97);
+
+            &::after{
+                background-color: hsl(28, 100, 77);
+            }
+        }
+        &:nth-child(2){
+            background-color: hsl(240, 100, 97);
+
+            &::after{
+                background-color: hsl(240, 100, 77);
+            }
+        }
+        &:nth-child(3){
+            background-color: hsl(348, 100, 97);
+
+            &::after{
+                background-color: hsl(348, 100, 77);
+            }
+        }
+        &:nth-child(4){
+            background-color: hsl(200, 100, 97);
+
+            &::after{
+                background-color: hsl(200, 100, 77);
+            }
+        }
+        &:nth-child(5){
+            background-color: hsl(28, 100, 97);
+
+            &::after{
+                background-color: hsl(28, 100, 77);
+            }
+        }
+    }
+
+    &__content{
+        overflow: hidden;
+        height: 0;
+        transition: all .25s ease;
+    }
+}
+
+/*Rotate icon and add font weight to titles*/
+.accordion-open{
+    // Add rotation to icon
+    & .accordion__icon{
+        transform: rotate(45deg);
+    }
+        
+    // Add font weight to the title of the open accordion
+    & .accordion__title{
+        font-weight: 600;
+    }
 }

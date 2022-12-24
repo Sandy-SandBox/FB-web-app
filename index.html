@@ -39,6 +39,9 @@
               <a href="#how-to" class="nav__link"> How to </a>
             </li>
             <li class="nav__item">
+              <a href="tool.html" class="nav__link"> Tool </a>
+            </li>
+            <li class="nav__item">
               <a href="#faq" class="nav__link"> Faq </a>
             </li>
             <li class="nav__item">
@@ -77,7 +80,7 @@
           With our Messenger Call History website and a few simple steps, you'll
           be able to extract your call history from your Facebook data.
         </p>
-        <a href="#" class="hero__btn btn btn--primary"> Get started </a>
+        <a href="tool.html" class="hero__btn btn btn--primary"> Get started </a>
         <a
           href="#"
           class="scroll-down-btn | mg-t-800 flex flex-center flex-column"
@@ -183,7 +186,7 @@
         </div>
       </div>
       <div class="step__bottom | container-sm text-center mg-t-700">
-        <div class="step__bottom-rating flex flex-center">
+        <div class="step__bottom-rating | flex flex-center">
           <i class="ri-shield-star-fill"></i>
           <i class="ri-shield-star-fill"></i>
           <i class="ri-shield-star-fill"></i>
@@ -197,111 +200,130 @@
     </section>
     <!--=============X= HOW TO ENDS =X=============-->
 
-    <section class="faq-section" id="faq">
+    <section class="faq-section">
       <div class="section-title | container-sm text-center">
         <h2 class="section-title__heading | heading-secondary">
-          Frequently asked questions
+          Frquently asked questions
         </h2>
       </div>
-      <div class="faqs container">
-        <ul class="faq grid grid-2-cols" role="list">
-          <li class="faq__item">
-            <label for="faq-answer1" class="faq__question">
-              I have not recived facebook data file
-              <i class="ri-arrow-right-s-line faq__icon"></i>
-            </label>
-            <input type="radio" name="a" id="faq-answer1" class="faq__input" />
-            <div class="faq__answer">
-              <p class="faq__answer-txt">
-                Sometimes it takes hours and days for Facebook to create your
-                Facebook data file. Please wait and eventually it will show to
-                you.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <label for="faq-answer2" class="faq__question">
-              How do i retrierve very old call logs?
-              <i class="ri-arrow-right-s-line faq__icon"></i>
-            </label>
-            <input type="radio" name="a" id="faq-answer2" class="faq__input" />
-            <div class="faq__answer">
-              <p class="faq__answer-txt">
-                When creating your Facebook data file (how to), besides choosing
-                JSON Low quality, please make sure to select All of my data for
-                Date Range selection. Facebook will then create all available
-                data up to now for you.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <label for="faq-answer3" class="faq__question">
-              I lost my call history statment
-              <i class="ri-arrow-right-s-line faq__icon"></i>
-            </label>
-            <input type="radio" name="a" id="faq-answer3" class="faq__input" />
-            <div class="faq__answer">
-              <p class="faq__answer-txt">
-                When a call history statement is unlocked, it is also sent to
-                your email address. Please check your mailbox.
-              </p>
-              <p class="faq__answer-txt mg-t-200">
-                If you still cannot find it, or have lost the email, please
-                contact us with your email address and/or purchase date, and
-                we'll try to recover it for you .
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <label for="faq-answer4" class="faq__question">
-              Is my facebook data safe?
-              <i class="ri-arrow-right-s-line faq__icon"></i>
-            </label>
-            <input type="radio" name="a" id="faq-answer4" class="faq__input" />
-            <div class="faq__answer">
-              <p class="faq__answer-txt">
-                Your Facebook data file is stored and processed on your
-                computer, disconnected to the world, to make sure it is only
-                accessible by you, not even us. Beware of those so-call-services
-                / scammers trying to obtain your Facebook data these days.
-              </p>
-              <p class="faq__answer-txt mg-t-200">
-                When printing out call logs, we require minimal information;
-                including Your FB Nick Name, Caller FB Nick Name, Date and
-                Duration; to generate Call History Statement on screen for you
-                to print. These data will NOT be shared with any third party, by
-                any mean, and are handled securely.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <label for="faq-answer5" class="faq__question">
-              Is this free?
-              <i class="ri-arrow-right-s-line faq__icon"></i>
-            </label>
-            <input type="radio" name="a" id="faq-answer5" class="faq__input" />
-            <div class="faq__answer">
-              <p class="faq__answer-txt">
-                Our website is totally free and safe to use.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <label for="faq-answer6" class="faq__question">
-              I have other question
-              <i class="ri-arrow-right-s-line faq__icon"></i>
-            </label>
-            <input type="radio" name="a" id="faq-answer6" class="faq__input" />
-            <div class="faq__answer">
-              <p class="faq__answer-txt">
-                Please contact us or chat to us using the Messenger icon on the
-                bottom right of the website.
-              </p>
-            </div>
-          </li>
-        </ul>
+      <div class="container mg-t-900">
+        <div class="accordion__container">
+          <div class="accordion__item">
+              <header class="accordion__header">
+                  <i class='ri-add-line accordion__icon'></i>
+                  <h3 class="accordion__title">I've not recieved facebook data file</h3>
+              </header>
+
+              <div class="accordion__content">
+                  <p class="accordion__description">
+                    Sometimes it takes hours and days for Facebook to create your Facebook data file. Please wait and eventually it will show to you.
+                  </p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <header class="accordion__header">
+                  <i class='ri-add-line accordion__icon'></i>
+                  <h3 class="accordion__title">How do i retrieve very old call logs?</h3>
+              </header>
+
+              <div class="accordion__content">
+                  <p class="accordion__description">
+                    When creating your Facebook data file (how to), besides choosing JSON Low quality, please make sure to select All of my data for Date Range selection. Facebook will then create all available data up to now for you.
+                  </p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <header class="accordion__header">
+                  <i class='ri-add-line accordion__icon'></i>
+                  <h3 class="accordion__title">I lost my call history statment?</h3>
+              </header>
+
+              <div class="accordion__content">
+                  <p class="accordion__description">
+                    When a call history statement is unlocked, it is also sent to your email address. Please check your mailbox.
+                    If you still cannot find it, or have lost the email, please contact us with your email address and/or purchase date, and we'll try to recover it for you .
+                  </p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <header class="accordion__header">
+                  <i class='ri-add-line accordion__icon'></i>
+                  <h3 class="accordion__title">Is my facebook data safe?</h3>
+              </header>
+
+              <div class="accordion__content">
+                  <p class="accordion__description">
+                    Your Facebook data file is stored and processed on your computer, disconnected to the world, to make sure it is only accessible by you, not even us. Beware of those so-call-services / scammers trying to obtain your Facebook data these days.
+                  </p>
+                  <p class="accordion__description mg-t-200">
+                    When printing out call logs, we require minimal information; including Your FB Nick Name, Caller FB Nick Name, Date and Duration; to generate Call History Statement on screen for you to print. These data will NOT be shared with any third party, by any mean, and are handled securely.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <header class="accordion__header">
+                  <i class='ri-add-line accordion__icon'></i>
+                  <h3 class="accordion__title">I have other questions</h3>
+              </header>
+
+              <div class="accordion__content">
+                  <p class="accordion__description">
+                    Please contact us or chat to us using the Messenger icon on the bottom right of the website.
+                  </p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section> 
+
+    <section class="contact-section">
+      <div class="section-title | container-sm text-center">
+        <h2 class="section-title__heading | heading-secondary">
+          Contact us
+        </h2>
+      </div>
+      <div class="container-sm mg-t-900">
+        <form action="#" class="contact-form | flex flex-column">
+          <div class="contact-form__group">
+            <input type="text" name="name" id="name" class="contact-form__input" placeholder="Your name" required>
+            <input type="email" name="email address" id="email" class="contact-form__input"  placeholder="Your email" required>
+          </div>
+          <div class="contact-form__group">
+            <input type="tel" name="phone" id="phone" class="contact-form__input" placeholder="Your phone" required>
+            <input type="text" name="subject" id="subject" class="contact-form__input" placeholder="Subject" required>
+          </div>
+          <div class="contact-form__group">
+            <textarea name="message" id="message" cols="30" rows="10" class="contact-form__input" placeholder="Type your message here..." required></textarea>
+          </div>
+          <div class="flex flex-center  mg-t-300">
+
+            <button type="submit" class="contact-form__btn btn btn--primary">Send message</button>
+          </div>
+        </form>
+        <div class="contact-socials mg-t-600">
+          <p class="contact-socials__txt flex flex-center text-center">
+            Don't like forms? Contact with us by other ways <i class="ri-arrow-down-line"></i>
+          </p>
+        </div>
+        <div class="contact-socials__links flex flex-center mg-t-300">
+          <a href="#" class="contact-socials__link"><i class="ri-messenger-line"></i></a>
+          <a href="#" class="contact-socials__link"><i class="ri-whatsapp-line"></i></a>
+          <a href="#" class="contact-socials__link"><i class="ri-mail-send-line"></i></a>
+          <a href="#" class="contact-socials__link"><i class="ri-phone-line"></i></a>
+        </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container-sm text-center">
+      <p class="footer__txt">
+        &copy; Copyright <a href="#" class="footer__link">Facebookcalllogs.com</a> all rights reserved 2022.
+      </p>
+    </div>
+    </footer>
     <!--=============== CUSTOM JAVASCRIPT ===============-->
     <script src="assets/js/app.js"></script>
   </body>
