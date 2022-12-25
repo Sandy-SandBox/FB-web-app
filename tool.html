@@ -1,0 +1,116 @@
+<!-- {% extends "./base.html" %}
+
+{% block title %} fb Messages to pdf {% endblock %}
+
+{% block content %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--=============== REQUIRED METATAGS ===============-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== REMIX ICON ===============-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <!--=============== GOOGLE FONTS (Montserrat & Manrope) ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!--=============== CUSTOM STYLESHEET ===============-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Tool</title>
+</head>
+<body class="tool-body">
+
+
+    <header class="tool-header">
+        <div class="tool-header__content | text-center container">
+            <h1 class="heading-secondary tool-header__heading"> Easily Create PDFs of Your Facebook Messenger Call Logs</h1>
+            <p class="tool-header__txt">With just a few clicks, our website allows you to create PDFs of your Facebook Messenger 
+              call logs. This makes it easy to keep track of important conversations, share call logs with 
+              others, and access your call logs from any device.</p>
+        </div>
+    </header>
+
+
+    <ul role="list" class="use__list | container-sm grid grid-4-cols text-center">
+        <li class="use__item">
+            <div class="use__icon">
+                <i class="ri-login-circle-line"></i>
+            </div>
+            <h3 class="use__heading">Log in to Facebook.</h3>
+            </li>
+        <li class="use__item">
+            <div class="use__icon">
+                <i class="ri-download-2-line"></i>
+            </div>
+            <h3 class="use__heading">Download your data.</h3>
+            </li>
+        <li class="use__item">
+            <div class="use__icon">
+                <i class="ri-upload-2-line"></i>
+            </div>
+            <h3 class="use__heading">Upload your data.</h3>
+            </li>
+        <li class="use__item">
+            <div class="use__icon">
+                <i class="ri-file-pdf-line"></i>
+            </div>
+            <h3 class="use__heading">Download your pdf.</h3>
+            </li>
+      </ul>
+
+    
+ 
+
+  <main class="tool mg-t-900">
+    <div id="folderUploadDiv">
+        <h1 class="tool__heading  | text-center text-capitalize">Upload your folder here</h1>
+        <label for="folder" class="tool__upload | flex flex-center flex-column mg-t-500 text-center">
+            <i class="ri-upload-cloud-line tool__icon"></i>
+            <p class="tool__txt text-capitalize">Browse folder to upload</p>
+        </label>
+        <input type="file" id="folder" webkitdirectory multiple/>
+        
+        
+        <!-- Hide This -->
+        <ul class="lists"> 
+        </ul>
+        
+        </div>
+        <!-- <div id="selectorDiv" >
+            <select id="user_drop">
+                <option value="-">-</option>
+            </select>
+            <!--<select id="content_type_drop">-->
+             <!--   <option value="-">-</option>-->
+            </select>
+        
+            <!-- <button onclick="getPDF()">Produce PDF</button>  -->
+        </div> 
+  </main>
+
+
+<div class="tool-contact container-sm  text-center mg-t-500">
+    
+    <p>If you have any questions or feedback, please don't hesitate to contact us at <a href="#" class="tool-contact__link clr-primary-300">contact@facebookcalllogs.com</a> .</p>
+</div>
+
+<footer class="footer mg-t-900">
+    <div class="container-sm text-center">
+    <p class="footer__txt">
+      &copy; Copyright <a href="#" class="footer__link">Facebookcalllogs.com</a> all rights reserved 2022.
+    </p>
+  </div>
+  </footer>
+</body>
+</html>
+
+<!-- {% endblock %} -->
